@@ -3,14 +3,14 @@
     
     
     /* Dark Mode (Night) - Deep Midnight Blue to Purple */
-    --bg-gradient-1: #0f2027;
+    --bg-gradient-1: #8a97cf;
     --bg-gradient-2: #203a43;
     --bg-gradient-3: #2c5364;
     --glass-bg: rgba(255, 255, 255, 0.08); /* Slightly more transparent */
     --glass-border: rgba(255, 255, 255, 0.15);
     --text-primary: #ffffff;
     --text-secondary: rgba(255, 255, 255, 0.7);
-    --accent: #00d2ff; /* Brighter Cyan */
+    --accent: #475a5f; /* Brighter Cyan */
     --card-hover: rgba(255, 255, 255, 0.12);
     
     /* Spacing */
