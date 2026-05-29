@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <main class="app-container glass">
+        <header class="app-header">
+            <h1 class="app-title">Weather App</h1>
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
+                <button id="search-btn" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+            </div>
+            <button id="current-location-btn" class="location-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10.12 10.12 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.09 8.09 0 0 1-8 8z"></path><path d="M12 8a4 4 0 1 0 4 4 4.05 4.05 0 0 0-4-4z"></path></svg>
+                Use Current Location
+            </button>
+            <div id="location-display" class="hidden">
+                <h2 id="city-name">--</h2>
+                <p id="date-time">--</p>
+            </div>
+        </header>
+
+        <section class="current-weather">
+            <div class="temp-container">
+                <span id="temperature">--</span>
+                <span class="unit">°C</span>
+            </div>
+            <div class="weather-icon" id="weather-icon">
+                <!-- Icon will be injected here -->
+            </div>
+            <p id="weather-description">--</p>
+        </section>
+
+        <section class="weather-details">
+            <div class="detail-card">
+                <span class="label">Humidity</span>
+                <span class="value" id="humidity">--%</span>
+            </div>
+            <div class="detail-card">
+                <span class="label">Wind Speed</span>
+                <span class="value" id="wind-speed">-- km/h</span>
+            </div>
+            <div class="detail-card">
+                <span class="label">Feels Like</span>
+                <span class="value" id="feels-like">--°</span>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
